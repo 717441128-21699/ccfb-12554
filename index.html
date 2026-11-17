@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>商业照明配光预览 · Light Studio</title>
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <nav id="navRail" class="nav-rail">
+        <div class="nav-brand">配光<br />工作室</div>
+      </nav>
+      <main class="viewport">
+        <canvas id="glCanvas"></canvas>
+        <div id="hud" class="viewport-hud"></div>
+        <div id="busyDot" class="busy-dot" title="计算状态"></div>
+        <div class="viewport-hint">左键旋转 · Shift+左键平移 · 滚轮缩放 · 点击地面放灯 · 拖动灯具移动</div>
+      </main>
+      <aside id="sidePanel" class="side-panel"></aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
