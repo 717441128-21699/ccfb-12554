@@ -1,0 +1,16 @@
+{
+  "name": "slab-vein-layout",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:smoke": "node --experimental-strip-types --loader ./scripts/ts-loader.mjs --no-warnings scripts/smoke.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^6.0.7"
+  }
+}
